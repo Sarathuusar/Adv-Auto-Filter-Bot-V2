@@ -129,6 +129,8 @@ async def auto_filter(bot, update):
         return # return if no files found for that query
     
 
+
+
     if len(results) == 0: # double check
         return
     
@@ -203,7 +205,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"Found {(len_results)} 🥰🥰മൂവി ചോദിച്ചതിന് നന്ദി ദയവായി🙏🙏🥰🥰 🔰ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ചെയ്യുക🔰⭕️ @Malamove3 And @Malamove4 ⭕️: <code>{query}</code>",
+                text=f"⚜️Found⚜️ {(len_results)} 🥰🥰മൂവി ചോദിച്ചതിന് നന്ദി ദയവായി🙏🙏🥰🥰 🔰ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ചെയ്യുക🔰⭕️ @Malamove3 And @Malamove4 ⭕️: <code>{query}</code>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
